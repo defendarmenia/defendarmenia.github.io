@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #d9e6ff;
+  color: #525761;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.link {
+  color: #FFFFFF;
+}
+
+.link:visited {
+  color: #999999;
+}
+
+.content-area {
+  width: 100%;
+  font-size: 35px;
+}
+
+.hook {
+  display: inline-block;
+  font-size: 50px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.medium {
+  font-size: 18px;
+}
+
+.mini-heading {
+  padding-left: 50px;
+}
+
+.paragraph {
+  padding: 20px;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  border: solid #525761;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 8px #f7f7c3;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#header {
+  width: 100%;
+  text-align: center;
+}
+
+#armenia-flag {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to bottom, red, red 33.33%, blue 33.33%, blue 66.66%, orange 66.66%);
+}
+
+#title {
+  color: #FFFFFF;
+  font-size: 60px;
+  text-align: center;
+  height: 100px;
+  font-weight: bolder;
+}
+
+#sign-in-button-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 200px;
+  height: 200px;
+  background-image: url('defendarmenialogo.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 700px) {
+  #title {
+    font-size: 50px;
+  }
+
+  .content-area {
+    font-size: 25px;
+  }
+
+  .hook {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .paragraph {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
