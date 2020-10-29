@@ -24,10 +24,6 @@
     user-select: none;
     /* iOS */
     -webkit-appearance: none; /* 1 */
-    /* IE6/7 hacks */
-    *overflow: visible;  /* 2 */
-    *display: inline; /* 3 */
-    *zoom: 1; /* 3 */
 }
 
 .btn-auth:hover,
@@ -42,7 +38,10 @@
     float: left;
     width: 22px;
     height: 22px;
-    background: url(auth-icons.png) no-repeat 99px 99px;
+    background-image: url(twitter-logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /**
@@ -60,6 +59,24 @@
     height: 36px;
 }
 
+@media only screen and (max-width: 700px) {
+  .btn-auth.large {
+      height: 80px;
+      line-height: 80px;
+      font-size: 30px;
+  }
+
+  .btn-auth.large:before {
+      width: 15%;
+      height: 80px;
+  }
+
+  .btn-auth,
+  .btn-auth:visited {
+    width: 60%;
+  }
+}
+
 /*
  * Remove excess padding and border in FF3+
  */
@@ -69,6 +86,27 @@
     padding: 0;
 }
 
+.btn-twitter:hover,
+.btn-twitter:focus,
+.btn-twitter:active {
+    color: #327695;
+    border-color: #8dc2e4;
+    background-color: #cadde9;
+}
+
+.btn-twitter:active {
+    background: #cadde9;
+    -webkit-box-shadow: inset 0 1px 0 #bbd6e7;
+    box-shadow: inset 0 1px 0 #bbd6e7;
+}
+
+/*
+ * Icon
+ */
+
+.btn-twitter:before {
+    margin: 0 0.6em 0 -0.6em;
+}
 
 /* Facebook (extends .btn-auth)
    ========================================================================== */
@@ -278,33 +316,6 @@
     background-image: linear-gradient(#f1f5f7, rgba(255, 255, 255, 0));
     -webkit-box-shadow: inset 0 1px 0 #fff;
     box-shadow: inset 0 1px 0 #fff;
-}
-
-.btn-twitter:hover,
-.btn-twitter:focus,
-.btn-twitter:active {
-    color: #327695;
-    border-color: #8dc2e4;
-    background-color: #cadde9;
-}
-
-.btn-twitter:active {
-    background: #cadde9;
-    -webkit-box-shadow: inset 0 1px 0 #bbd6e7;
-    box-shadow: inset 0 1px 0 #bbd6e7;
-}
-
-/*
- * Icon
- */
-
-.btn-twitter:before {
-    margin: 0 0.6em 0 -0.6em;
-    background-position: -22px 0;
-}
-
-.btn-twitter.large:before {
-    background-position: -36px -22px;
 }
 
 
